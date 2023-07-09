@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #081b29;
+    color: #ededed;
+}
+
+.wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.reg-form-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+span {
+    color: #00abf0;
+    font-weight: 600;
+}
+
+.reg-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reg-form input{
+    border: 2px solid #00abf0;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    outline: none;
+    color: #ededed;
+}
+
+input::placeholder {
+    color: #ededed;
+}
+
+
+.reg-form select {
+    width: 10%;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #ededed;
+    border: 2px solid #00abf0;
+    height: 100%;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+select option {
+    color: #081b29;
+}
+
+#subjects {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+#subjects input {
+    margin-right: 0.3rem;
+}
+
+.add-student {
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    border: 2px solid #00abf0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    outline: none;
+    background-color: transparent;
+    color: #ededed;
+    font-weight: 600;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00abf0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+.btn:hover {
+    color: #081b29;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+#students {
+    display: flex;
+    min-height: 6.25rem;
+    border: 1px solid #00abf0;
+    margin-top: 2rem;
+}
+
+.students-column {
+    width: 24%;
+    border: 1px solid #00abf0;
+}
+
+.students-column:first-child {
+    width: 4%;
+}
+
+.student-title {
+    text-align: center;
+    color: #00abf0;
+    border-bottom: 2px solid #00abf0;
+    padding: 0.5rem 0;
+}
+
+.student-title h3 {
+    text-transform: uppercase;
+}
+
+.new-student {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #00abf0;
+    min-height: 3.2rem;
+}
+
+.new-student:last-child {
+    border-bottom: none;
+}

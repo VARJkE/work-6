@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Student register form</title>
+</head>
+<body onload="selectedFaculty(0)">
+    <div class="wrapper">
+        <div class="reg-form-title">
+            <h1>Register new <span>Student</span></h1>
+        
+        </div>
+        <div class="reg-form">
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+            <select name="faculty" id="faculty" onchange="selectedFaculty(this.value)">
+                <option value="0">IT</option>
+                <option value="1">Business</option>
+                <option value="2">LAW</option>
+            </select>            
+        </div>
+
+        <div id="subjects">
+
+        </div>
+        <div class="add-student">
+            <button class="btn" onclick="addStudent()">Add Student</button>
+        </div>
+        <div id="students">
+            <div id="studentId" class="students-column">
+                <div class="student-title">
+                    <h3>ID</h3>
+                </div>
+            </div>
+            <div id="studentFirstName" class="students-column">
+                <div class="student-title">
+                    <h3>First Name</h3>
+                </div>
+                
+            </div>
+            <div id="studentLastName" class="students-column">
+                <div class="student-title">
+                    <h3>Last Name</h3>
+                </div>
+            </div>
+            <div id="studentFaculty" class="students-column">
+                <div class="student-title">
+                    <h3>Faculty</h3>
+                </div>
+            </div>
+            <div id="studentSubjects" class="students-column">
+                <div class="student-title">
+                    <h3>Subjects</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

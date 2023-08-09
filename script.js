@@ -44,12 +44,11 @@ function addStudent() {
     studentsObj.firstName = document.getElementById('firstName').value;
     studentsObj.lastName = document.getElementById('lastName').value;
     studentsObj.faculty = faculties[document.getElementById('faculty').value];
-    studentsObj.selectedSubjects = [checkedSubjects];
+    studentsObj.selectedSubjects = checkedSubjects;
     students.push(studentsObj);
 
     let studentToAdd = document.createElement('div');
     studentToAdd.classList.add('new-student');
-    
     for(let key in studentsObj) {
         // console.log(key)
         // console.log(studentsObj[key])
